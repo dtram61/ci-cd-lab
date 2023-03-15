@@ -29,5 +29,5 @@ public class DiceTests {
        int roll = dice.roll();
         assertTrue(roll >= 1 && roll <= 6);
 
-    }
+    } // does this work
 }
