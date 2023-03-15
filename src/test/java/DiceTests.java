@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class DiceTests {
 
     @Test
-    public void diceTest()
+    public void testDice()
     {
         Dice dice = new Dice(6, "blue");
         assertEquals(6,dice.getSides());
@@ -22,7 +22,7 @@ public class DiceTests {
 
     @ParameterizedTest
     @ValueSource(ints = {1,2,3,4,5,6})
-    public void validNumber(int number)
+    public void testValidNumber(int number)
     {
        Dice dice = new Dice(6, "blue");
 
