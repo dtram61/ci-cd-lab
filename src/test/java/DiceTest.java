@@ -15,7 +15,7 @@ public class DiceTest {
     {
         Dice dice = new Dice(6, "blue");
         assertEquals(6,dice.getSides());
-        assertEquals("blue",dice.getColor());
+
     }
 
     @ParameterizedTest
@@ -27,5 +27,11 @@ public class DiceTest {
        int roll = dice.roll();
         assertTrue(roll >= 1 && roll <= 6);
 
-    } // does this work
+    }
+
+    @Test
+    public void testColors(){
+        Dice dice = new Dice(6, "green");
+        assertEquals("green", dice.getColor());
+    }
 }
