@@ -29,9 +29,27 @@ public class DiceTest {
 
     }
 
+
+
     @Test
     public void testColors(){
         Dice dice = new Dice(6, "green");
         assertEquals("green", dice.getColor());
     }
+
+    @Test
+    public void testRollFrequency()
+    {
+        Dice dice = new Dice(6, "red");
+        int frequency = 5;
+        int[] totalFrequencyOfRoll = new int[frequency];
+        for (int i = 0; i < frequency ; i++) {
+            totalFrequencyOfRoll[i] = dice.roll();
+            assertTrue(totalFrequencyOfRoll[i] >= 1 && totalFrequencyOfRoll[i] <=6);
+        }
+
+
+
+    }
+
 }
