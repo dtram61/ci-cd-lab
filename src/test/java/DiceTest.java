@@ -47,7 +47,7 @@ public class DiceTest {
             totalFrequencyOfRoll[i] = dice.roll();
             assertTrue(totalFrequencyOfRoll[i] >= 1 && totalFrequencyOfRoll[i] <=6);
         }
-
+//testing
 
 
     }
